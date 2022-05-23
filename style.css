@@ -82,3 +82,31 @@ input[name="r"] {
 #r3:checked ~ .images {
     transform: translateX(-50%)
 }
+
+
+
+#r4:checked ~ .images {
+    transform: translateX(-75%)
+}
+
+#r1:checked+#r2+#r3+#r4 + .images + .navigation > label:nth-child(1) {
+    background-color: transparent;
+}
+
+#r2:checked+#r3+#r4 + .images + .navigation > label:nth-child(2) {
+    background-color: transparent;
+}
+
+#r3:checked+#r4 + .images + .navigation > label:nth-child(3) {
+    background-color: transparent;
+}
+
+#r4:checked + .images + .navigation > label:nth-child(4) {
+    background-color: transparent;
+}
+
+p {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 10px;
+}
